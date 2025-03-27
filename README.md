@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿# Research Ethics Proposal Assistant (REPA)
 
 A Streamlit application that assists researchers in preparing ethics proposals by providing AI-powered feedback and document analysis.
@@ -32,3 +33,7 @@ A Streamlit application that assists researchers in preparing ethics proposals b
 - \config.py\: Configuration settings
 - \gents/\: AI agent implementations
 - \utils/\: Utility functions and data
+=======
+# EthicsPoC
+A Streamlit application that assists researchers in preparing ethics proposals by providing AI-powered feedback and document analysis.
+>>>>>>> 94671bef7bb7bdeec13b82dab509ea69bc7116b4
