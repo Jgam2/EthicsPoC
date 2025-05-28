@@ -61,7 +61,7 @@ streamlit run app.py
 ```
 
 ## 🔧  Project Structure
-
+```bash
 research-ethics-assistant/
 ├── app.py                  # Main Streamlit application
 ├── config.py               # Configuration settings and environment variables
@@ -74,6 +74,7 @@ research-ethics-assistant/
 │   ├── ethics_questions.py # Ethics checklist configuration
 │   └── __init__.py
 └── .env                    # Environment variables 
+```
 
 ## 💻  How It Works
 Architecture
