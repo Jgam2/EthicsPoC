@@ -81,44 +81,66 @@ Architecture
 REPA uses a multi-agent AI system to provide ethics guidance:
 
 Base Agent: Handles general ethics analysis, question feedback, and checklist validation
+
 Document Processor Agent: Specializes in document analysis, extraction, and report generation
+
 Azure AI Wrapper: Provides a unified interface to Azure's AI services
-Workflow
+### Workflow 
 Research Context: Users enter details about their research project
+
 Ethics Checklist: The system presents relevant ethics questions based on the research context
+
 Document Upload: Users upload supporting documentation for each requirement
+
 AI Analysis: Documents and responses are analyzed for compliance and completeness
+
 Feedback Generation: The system provides specific feedback and recommendations
+
 Report Generation: A comprehensive ethics review report is generated
+
 Submission: Users can download the report and submit their completed application
+
 ## 🔍 Key Components
-Ethics Checklist Configuration
+### Ethics Checklist Configuration
 The system uses a structured ethics checklist divided into sections:
 
 Part A: Mandatory components for all submissions
+
 Part B: Additional components that may be required
+
 Part C: Requirements for gene technology research
+
 Part D: Requirements for radiological procedures
+
 Part E: Requirements for Aboriginal and Torres Strait Islander health research
-Document Analysis
+
+### Document Analysis
 The document processor can analyze various document types:
 
 Consent forms
+
 Research protocols
+
 Ethics committee application forms
+
 CVs/Resumes
+
 Surveys/Questionnaires
-For each document, the system:
+
+### For each document, the system:
 
 Determines the document type
+
 Checks relevance to the ethics question
+
 Analyzes for required elements
+
 Provides a compliance score and recommendations
+
 ## 🛠️ Customization
 ### Adding New Ethics Questions
 Edit the utils/ethics_questions.py file to add new questions to the checklist:"NEW_PART": 
 ```bash
-
 {
     "title": "New Ethics Section",
     "description": "Description of this section",
