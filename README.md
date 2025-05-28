@@ -80,62 +80,63 @@ research-ethics-assistant/
 Architecture
 REPA uses a multi-agent AI system to provide ethics guidance:
 
-Base Agent: Handles general ethics analysis, question feedback, and checklist validation
+- Base Agent: Handles general ethics analysis, question feedback, and checklist validation
 
-Document Processor Agent: Specializes in document analysis, extraction, and report generation
+- Document Processor Agent: Specializes in document analysis, extraction, and report generation
 
-Azure AI Wrapper: Provides a unified interface to Azure's AI services
+- Azure AI Wrapper: Provides a unified interface to Azure's AI services
+  
 ### Workflow 
-Research Context: Users enter details about their research project
+- Research Context: Users enter details about their research project
 
-Ethics Checklist: The system presents relevant ethics questions based on the research context
+- Ethics Checklist: The system presents relevant ethics questions based on the research context
 
-Document Upload: Users upload supporting documentation for each requirement
+- Document Upload: Users upload supporting documentation for each requirement
 
-AI Analysis: Documents and responses are analyzed for compliance and completeness
+- AI Analysis: Documents and responses are analyzed for compliance and completeness
 
-Feedback Generation: The system provides specific feedback and recommendations
+- Feedback Generation: The system provides specific feedback and recommendations
 
-Report Generation: A comprehensive ethics review report is generated
+- Report Generation: A comprehensive ethics review report is generated
 
-Submission: Users can download the report and submit their completed application
+- Submission: Users can download the report and submit their completed application
 
 ## 🔍 Key Components
 ### Ethics Checklist Configuration
 The system uses a structured ethics checklist divided into sections:
 
-Part A: Mandatory components for all submissions
+- Part A: Mandatory components for all submissions
 
-Part B: Additional components that may be required
+- Part B: Additional components that may be required
 
-Part C: Requirements for gene technology research
+- Part C: Requirements for gene technology research
 
-Part D: Requirements for radiological procedures
+- Part D: Requirements for radiological procedures
 
-Part E: Requirements for Aboriginal and Torres Strait Islander health research
+- Part E: Requirements for Aboriginal and Torres Strait Islander health research
 
 ### Document Analysis
 The document processor can analyze various document types:
 
-Consent forms
+- Consent forms
 
-Research protocols
+- Research protocols
 
-Ethics committee application forms
+- Ethics committee application forms
 
-CVs/Resumes
+- CVs/Resumes
 
-Surveys/Questionnaires
+- Surveys/Questionnaires
 
 ### For each document, the system:
 
-Determines the document type
+1. Determines the document type
 
-Checks relevance to the ethics question
+2. Checks relevance to the ethics question
 
-Analyzes for required elements
+3. Analyzes for required elements
 
-Provides a compliance score and recommendations
+4. Provides a compliance score and recommendations
 
 ## 🛠️ Customization
 ### Adding New Ethics Questions
@@ -173,10 +174,10 @@ PROMPTS = {
 ## 📊 Progress Tracking
 The application tracks progress at multiple levels:
 
-Overall application completion
-Section-level completion (Research Context, Ethics Checklist)
-Component-level completion for ethics checklist sections
-Document compliance status
+- Overall application completion
+- Section-level completion (Research Context, Ethics Checklist)
+- Component-level completion for ethics checklist sections
+- Document compliance status
 
 ## 🔒 Security and Privacy
 All AI processing is done through Azure AI services
