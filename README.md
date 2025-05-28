@@ -51,9 +51,9 @@ cd repa
 pip install -r requirements.txt
 ```
 3. Create a .env file with your Azure AI credentials
-AZURE_ENDPOINT=https://your-azure-endpoint.com
-AZURE_API_KEY=your_api_key_here
-AZURE_MODEL=gpt-4-32k
+- AZURE_ENDPOINT=https://your-azure-endpoint.com
+- AZURE_API_KEY=your_api_key_here
+- AZURE_MODEL=gpt-4-32k
 
 4. Run the application
 ```bash
