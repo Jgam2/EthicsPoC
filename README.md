@@ -44,20 +44,21 @@ REPA is an AI-powered application that guides researchers through the ethics pro
 ```bash
 git clone https://github.com/yourusername/repa.git
 cd repa
+```
 
 2. Install dependencies
 ```bash
 pip install -r requirements.txt
-
+```
 3. Create a .env file with your Azure AI credentials
 AZURE_ENDPOINT=https://your-azure-endpoint.com
 AZURE_API_KEY=your_api_key_here
 AZURE_MODEL=gpt-4-32k
 
 4. Run the application
-
+```bash
 streamlit run app.py
-
+```
 
 ## 🔧  Project Structure
 
@@ -113,8 +114,11 @@ Checks relevance to the ethics question
 Analyzes for required elements
 Provides a compliance score and recommendations
 ## 🛠️ Customization
-Adding New Ethics Questions
-Edit the utils/ethics_questions.py file to add new questions to the checklist:"NEW_PART": {
+### Adding New Ethics Questions
+Edit the utils/ethics_questions.py file to add new questions to the checklist:"NEW_PART": 
+```bash
+
+{
     "title": "New Ethics Section",
     "description": "Description of this section",
     "questions": [
@@ -129,10 +133,10 @@ Edit the utils/ethics_questions.py file to add new questions to the checklist:"N
     ]
 }
 
-
-Modifying AI Prompts
+```
+### Modifying AI Prompts
 Edit the config.py file to customize the AI prompts:
-
+```bash
 PROMPTS = {
     "new_prompt_type": """
     Your custom prompt template here.
@@ -141,7 +145,7 @@ PROMPTS = {
     Instructions for the AI model.
     """
 }
-
+```
 
 ## 📊 Progress Tracking
 The application tracks progress at multiple levels:
